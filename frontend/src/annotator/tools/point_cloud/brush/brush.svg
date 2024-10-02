@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 56 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-448.417,-1980.19)">
+        <g transform="matrix(1,0,0,1,-5895.02,1691.94)">
+            <g id="Pinsel" transform="matrix(1,0,0,1,9,-81.7058)">
+                <g transform="matrix(-0.220697,-0.178065,0.201798,-0.250113,6237.88,625.83)">
+                    <path d="M177.209,811.47L125.027,811.47L143.329,660.421L158.906,660.421L177.209,811.47Z" style="fill:none;stroke:white;stroke-width:10.89px;"/>
+                </g>
+                <g transform="matrix(0.193352,0.156002,-0.156002,0.193352,6435.42,237.546)">
+                    <path d="M190.079,540C190.079,540 225.886,628.133 213.152,640.867C200.417,653.602 179.74,653.602 167.006,640.867C154.272,628.133 190.079,540 190.079,540Z" style="fill:none;stroke:white;stroke-width:13.28px;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

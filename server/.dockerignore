@@ -1,0 +1,28 @@
+# backend
+backend-tmp/.env
+backend-tmp/env
+backend-tmp/.venv
+backend-tmp/venv
+
+backend-tmp/media
+backend-tmp/db
+backend-tmp/static
+
+# frontend
+
+frontend-tmp/node_modules
+
+frontend-tmp/build
+frontend-tmp/coverage
+
+frontend-tmp/npm-debug.log*
+frontend-tmp/yarn-debug.log*
+frontend-tmp/yarn-error.log*
+
+# general
+
+**/.git
+
+**/.vscode
+
+.DS_Store

@@ -1,0 +1,66 @@
+FILE PIPELINES SPECIFICATION
+
+--- PROJECT MANAGEMENT  --- download annotation file
+start:  download annotation file (Blob)
+		=> stream (ReadableStream)
+		=> unzip (ReadableStream)
+		=> pipe to file on local system (FileSystemWritableFileStream)
+
+// throw error, if there are more than one files in the zip folder
+
+--- ANNOTATOR           --- download model
+start:  download model (Blob)
+		=> stream (ReadableStream)
+		=> unzip (ReadableStream[])
+		=> pipe each to file on origin private file system (FileSystemWritableFileStream)
+
+// throw error, if there are not exactly one or two files in the zip folder
+// one of them being a .obj/.ply file and the optional second one being and
+// .jpg/.png file
+
+--- ANNOTATOR           --- download annotation file
+start:  download annotationFile (Blob)
+		=> stream (ReadableStream)
+		=> unzip (ReadableStream)
+		=> pipe to file on origin private file system (FileSystemWritableFileStream)
+
+// throw error, if there are more than one files in the zip folder
+
+
+
+--- PROJECT MANAGEMENT  --- upload model
+start:  model files from local file system (Files[])
+		=> stream ({ReadableStream, name}[])
+		=> zip (ReadableStream)
+		=> toBlob (Blob)
+		=> upload model
+
+// names do not matter, but the files need to meet the same requirements as in "download model"
+
+--- ANNOTATOR           --- upload annotation file
+start:  annotationFile from origin private file system (File)
+		=> stream (ReadableStream + name)
+		=> zip (ReadableStream)
+		=> toBlob (Blob)
+		=> upload annotation file
+
+// name = annotation.anno3d
+
+
+
+--- ANNOTATOR           --- read annotationData
+start:  annotationFile from origin private file system (File)
+		=> stream (ReadableStream)
+		=> parse (AnnotationData)
+
+--- ANNOTATOR           --- write annotationData
+start:  annotationData (AnnotationData)
+		=> serialize (ReadableStream)
+		=> pipe to file on origin private file system (FileSystemWritableFileStream)
+
+
+
+// The "toBlob" stage is a possible performance bottle neck. Ideally the chunks provided by a
+// ReadableStream would be sent to the server directly without buffering them in a blob beforehand.
+// Unfortunately the currently used http client axios does not support this (yet?). The problem could be
+// fixed by using the browser native fetch api instead of axios (see issue #35).

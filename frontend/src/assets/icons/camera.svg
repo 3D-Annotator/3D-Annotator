@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 75 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-29.842,-2230.47)">
+        <g transform="matrix(1,0,0,1,-5895.02,1691.94)">
+            <g id="Kamera">
+                <g transform="matrix(1,0,0,1,5761.16,-32.1465)">
+                    <circle cx="201.062" cy="604.019" r="17.457" style="fill:none;stroke:white;stroke-width:3.3px;"/>
+                </g>
+                <g transform="matrix(0.76214,0,0,1,5794.11,-42.8234)">
+                    <path d="M267.68,590.268L238.035,590.268L232.216,582.823L208.94,582.823L203.121,590.268L173.476,590.268L173.476,638.523L267.68,638.523L267.68,590.268Z" style="fill:none;stroke:white;stroke-width:3.3px;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

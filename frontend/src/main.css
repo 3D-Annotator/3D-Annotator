@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	overflow-x: hidden;
+}
+
+.Toastify__toast {
+	font-family: inherit;
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--default {
+	--my-toastify-colored-bg: var(--b1);
+	--my-toastify-colored-content: var(--bc, var(--nc));
+	background: hsla(var(--my-toastify-colored-bg));
+	color: hsla(var(--my-toastify-colored-content));
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--info {
+	--my-toastify-colored-bg: var(--in);
+	--my-toastify-colored-content: var(--inc, var(--nc));
+	background: hsla(var(--my-toastify-colored-bg));
+	color: hsla(var(--my-toastify-colored-content));
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--success {
+	--my-toastify-colored-bg: var(--su);
+	/* spell-checker:disable-next-line */
+	--my-toastify-colored-content: var(--suc, var(--nc));
+	background: hsla(var(--my-toastify-colored-bg));
+	color: hsla(var(--my-toastify-colored-content));
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--warning {
+	--my-toastify-colored-bg: var(--wa);
+	/* spell-checker:disable-next-line */
+	--my-toastify-colored-content: var(--wac, var(--nc));
+	background: hsla(var(--my-toastify-colored-bg));
+	color: hsla(var(--my-toastify-colored-content));
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--error {
+	--my-toastify-colored-bg: var(--er);
+	/* spell-checker:disable-next-line */
+	--my-toastify-colored-content: var(--erc, var(--nc));
+	background: hsla(var(--my-toastify-colored-bg));
+	color: hsla(var(--my-toastify-colored-content));
+}
+
+.Toastify__close-button--colored {
+	color: inherit;
+}
+
+.Toastify__progress-bar-theme--colored.Toastify__progress-bar {
+	background: hsla(var(--my-toastify-colored-content) / 0.5);
+}
+
+.Toastify__toast-theme--colored .Toastify__spinner {
+	border-color: transparent;
+	border-right-color: hsla(var(--my-toastify-colored-content));
+}
+
+.range:disabled {
+	opacity: 20%;
+	cursor: not-allowed;
+}

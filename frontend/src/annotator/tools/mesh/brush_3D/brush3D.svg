@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.8.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns:serif="http://www.serif.com/"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64"
+	 style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;}
+	.st2{fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.3204;}
+	.st3{display:none;}
+	.st4{display:inline;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<g>
+	<path class="st0" d="M62.7,44.8c0-0.9-0.5-1.8-1.3-2.2l-8.9-5.1c-0.8-0.5-1.8-0.5-2.6,0L41,42.6c-0.8,0.5-1.3,1.3-1.3,2.2v10.2
+		c0,0.9,0.5,1.8,1.3,2.2l8.9,5.1c0.8,0.5,1.8,0.5,2.6,0l8.9-5.1c0.8-0.5,1.3-1.3,1.3-2.2V44.8z"/>
+	<path class="st0" d="M40.1,43.6L51.2,50l11.1-6.4"/>
+	<path class="st0" d="M51.2,62.7V50"/>
+</g>
+<g id="Pinsel_00000019663026488410236130000006592274868405537186_" transform="matrix(1,0,0,1,9,-81.7058)">
+	<path class="st1" d="M24.8,100.9L35.8,112l-40.2,32.4l-3.3-3.3L24.8,100.9z"/>
+	<path class="st2" d="M53.7,83.1c0,0-9.7,23-14.5,23c-4.7,0-8.6-3.8-8.6-8.6C30.7,92.8,53.7,83.1,53.7,83.1z"/>
+</g>
+<g class="st3">
+	<path class="st4" d="M31.4,62.9H63V31.3"/>
+	<path class="st4" d="M49.2,49.1L63,62.9"/>
+</g>
+<g class="st3">
+	<path class="st4" d="M48.3,48.3l9.8,9.8"/>
+	<path class="st4" d="M53.2,36.9l4.9-4.9l4.9,4.9"/>
+	<path class="st4" d="M36.9,62.9L32,58.1l4.9-4.9"/>
+	<path class="st4" d="M32,58.1h26.1V32"/>
+</g>
+</svg>

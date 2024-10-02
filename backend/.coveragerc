@@ -1,0 +1,7 @@
+[run]
+omit =
+    annotator\backend\sample_data\*
+    annotator\tests\*
+
+[report]
+show_missing = true

@@ -1,0 +1,7 @@
+.vscode
+
+*.tmp
+**/*-tmp
+
+.env.local
+.env.*.local

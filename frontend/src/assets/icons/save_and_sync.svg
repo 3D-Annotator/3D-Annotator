@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-1059.38,-2089.59)">
+        <g transform="matrix(1,0,0,1,-5895.02,1691.94)">
+            <g transform="matrix(1.24099,0,0,1.82591,6211.48,-4365.68)">
+                <path d="M628,2619L628,2638L637.04,2628.96" style="fill:none;stroke:white;stroke-width:2.42px;"/>
+            </g>
+            <g transform="matrix(-1.24099,2.2361e-16,-1.51978e-16,-1.82591,7759.29,5233.14)">
+                <path d="M628,2619L628,2638L637.04,2628.96" style="fill:none;stroke:white;stroke-width:2.42px;"/>
+            </g>
+            <g id="Diskette" transform="matrix(0.319546,0,0,0.319546,4781.39,158.292)">
+                <g transform="matrix(1,0,0,1,5910,-1.0322)">
+                    <path d="M908.015,939.372L1066.51,939.372C1073.71,939.372 1079.56,933.523 1079.56,926.318L1079.56,804.527L1029.81,754.772L908.015,754.772C900.81,754.772 894.96,760.622 894.96,767.827L894.96,926.318C894.96,933.523 900.81,939.372 908.015,939.372Z" style="fill:none;stroke:white;stroke-width:9.39px;"/>
+                </g>
+                <g transform="matrix(-0.467618,-5.72666e-17,7.23112e-17,-0.590466,7380.6,1315.01)">
+                    <path d="M960.005,950.549L1107.25,950.549L1107.26,950.445L1107.26,906.199C1107.26,895.631 1098.68,893.004 1088.11,893.004L979.147,893.004C968.58,893.004 960,895.631 960,906.199L960,950.445L960.005,950.549Z" style="fill:none;stroke:white;stroke-width:17.63px;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

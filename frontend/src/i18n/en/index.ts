@@ -1,0 +1,181 @@
+import type { BaseTranslation } from "../i18n-types";
+
+const en: BaseTranslation = {
+	ENGLISH: "English",
+	GERMAN: "German",
+	CONFIRM_RELOAD_ON_LANGUAGE_CHANGE:
+		"To change the language, the page will be reloaded. Any unsaved changes will be lost. Do you want to continue?",
+
+	PASSWORD: "Password",
+	USERNAME: "Username",
+	LOG_IN: "Login",
+	INVALID_LOGIN_CREDENTIALS: "Incorrect login credentials",
+
+	REGISTER: "Register",
+	EMAIL_ADDRESS: "Email address",
+
+	LOG_OUT: "Logout",
+	MY_PROJECTS: "My projects",
+	ADD_PROJECT: "Add project",
+	OWNER: "Owner",
+	OPEN: "Open",
+	NAME: "Name",
+	DESCRIPTION: "Description",
+
+	UPLOAD_MODELS: "Upload models",
+	LABELS: "Labels",
+	EDIT_LABELS: "Edit labels",
+	COLOR: "Color",
+	MEMBERS: "Members",
+	EDIT_MEMBERS: "Edit members",
+	EDIT_PROJECT: "Edit project",
+	DELETE_PROJECT: "Delete project",
+	LEAVE_PROJECT: "Leave project",
+	EDIT: "Edit",
+	EXPORT: "Export",
+	DELETE: "Delete",
+	UNLOCK: "Unlock",
+
+	EDIT_MODEL: "Edit model",
+	ANNOTATION_FILE: "Annotation file",
+	UPLOAD_ANNOTATION_FILE: "Upload annotation file",
+	FILE_DESCRIPTION_3D_MODEL: "3D model",
+	FILE_DESCRIPTION_TEXTURE: "Texture",
+	FILE_DESCRIPTION_ANNOTATION: "Annotation",
+	NO_MODEL_DATA_PREVIEWS_MSG: "No files selected",
+	NO_MODEL_TYPE_MSG: "No model type selected",
+	UNNAMED_MODEL_DATA_PREVIEW_MSG: "Unnamed files",
+
+	TRIANGLE_MESH: "triangle mesh",
+	POINT_CLOUD: "point cloud",
+
+	SELECT_DIRECTORY: "Select directory",
+	SELECT_FILES: "Select files",
+	UPLOAD: "Upload",
+
+	MODEL_FILE_NAME: "Model file name",
+	TEXTURE_FILE_NAME: "Texture file name",
+	ANNOTATION_FILE_NAME: "Annotation file name",
+
+	NEW_LABEL: "New label",
+	ANNOTATION_CLASS: "Annotation class",
+	ADD: "Add",
+
+	ADD_MEMBER: "Add member",
+
+	PAGE_NOT_FOUND: "404 Page not found",
+	START_PAGE: "Start page",
+
+	// Error texts
+
+	FILL_ALL_FIELDS: "Please fill in all fields.",
+	ANNOTATION_CLASS_ALREADY_EXISTS: "Annotation class already exists.",
+	SPECIFY_NAME: "Please specify the name for the model.",
+	USER_NAME_ALREADY_TAKEN: "Username is already taken.",
+	EMAIL_NOT_VALID: "Email address is not valid.",
+	PASSWORD_INSECURE: "Password is not secure enough.",
+
+	// Toast messages
+
+	NETWORK_ERROR: "Network error, please check your internet connection.",
+	LOCKED_BY: "Locked by",
+	MODEL_LOCKED: "Model is locked",
+	BIG_FILES_WARNING: "Big files can lead to a crash of the browser window.",
+	PARSER_ANNOTATION_CLASS_MISSING:
+		"Parser: Annotation class {annotationClass:number} missing.",
+	PARSER_ANNOTATION_CLASS_DUPLICATE:
+		"Parser: Duplicate annotation class: {annotationClass:number}",
+	PARSER_UNSUPPORTED_FILE_FORMAT:
+		"Parser: Format {format:string} {version:string} is not supported.",
+	PARSER_ERROR: "Error while parsing annotation file.",
+	MODEL_FILE_TOO_BIG: "Model file is too big.",
+	SAVING: "Saving...",
+	UPLOAD_ERROR: "Error during file upload.",
+	SAVING_SUCCESS: "Saved",
+	COMPRESSING: "Compressing...",
+	UPLOADING: "Uploading...",
+	ANNOTATION_FILE_TOO_BIG: "Annotation file is too big.",
+	UPLOAD_SUCCESS: "Upload successful.",
+	BASE_FILE_ALREADY_EXISTS: "Base file already exists.",
+	DOWNLOAD_SUCCESS: "Download successful.",
+	NO_ANNOTATION_FILE: "No annotation file found.",
+	NO_LABELS_FOUND: "No labels found.",
+
+	// Loading states
+
+	FETCHING_MODEL_INFORMATION: "fetching model information...",
+	LOCKING_MODEL: "locking model...",
+	NO_LABELS: "No labels found, aborting...",
+	DOWNLOADING_MODEL: "downloading model...",
+	WRITING_MODEL_TO_STORAGE: "writing model to storage...",
+	DOWNLOADING_ANNOTATION: "downloading annotation file...",
+	WRITING_ANNOTATION_TO_STORAGE: "writing annotation file to storage...",
+	SETTING_UP_ANNOTATOR: "setting up annotator...",
+	SETTING_UP_ANNOTATOR_ABORTED: "setting up annotator... aborted",
+	UNKNOWN_LABEL: "Unknown annotation class found, aborting...",
+	DUPLICATE_LABEL: "Annotation class used multiple times, aborting...",
+	UNSUPPORTED_FILE_FORMAT: "Unsupported annotation file format",
+	PARSING_ERROR: "Annotation file could not be parsed, aborting...",
+	UNSUPPORTED_FILE_SIZE: "The file size of the model is not supported.",
+	FINISHED_SETUP: "finished setup",
+
+	// Annotator
+
+	LASSO: "Lasso",
+	POLYGON: "Polygon",
+	BRUSH_3D: "3D brush",
+	BRUSH: "Brush",
+
+	SAVE: "Save",
+	RENDER: "Render",
+	ERASER: "Eraser",
+	SHOW_HIDE: "show/hide",
+	SELECTION_MODE: "Selection mode",
+	CENTROID: "Centroid",
+	CENTROID_DESCRIPTION: "Selects a face if its center point is contained",
+	INTERSECTION: "Intersection",
+	INTERSECTION_DESCRIPTION:
+		"Selects a face if the polygon intersects it (superset of contain)",
+	CONTAIN: "Contain",
+	CONTAIN_DESCRIPTION: "Selects a face if all its vertices are contained",
+	REMOVE_CORNER: "Remove corner",
+	CLOSE: "Close",
+	ANNOTATE: "Annotate",
+	CANCEL: "Cancel",
+	DELETE_KEY: "del",
+	SIZE: "Size",
+	ADD_CORNER: "Add corner",
+	LEFT_MOUSE_BUTTON: "Left mouse button",
+	POLYGON_PREVIEW: "Polygon preview",
+	SHIFT_KEY: "shift",
+	DELETE_LAST_CORNER: "Delete last corner",
+	OR: "or",
+	CLOSE_POLYGON: "Close polygon",
+	ENTER_KEY: "enter",
+	ESCAPE_KEY: "esc",
+	VIEWS: "Views",
+	TOP: "Top",
+	BOTTOM: "Bottom",
+	LEFT: "Left",
+	RIGHT: "Right",
+	FRONT: "Front",
+	BACK: "Back",
+	CAMERA: "Camera",
+	GIZMO: "Gizmo",
+	PERSPECTIVE: "Perspective",
+	ORTHOGRAPHIC: "Orthographic",
+	FOV: "FOV",
+	LIGHTING: "Lighting",
+	GLOBAL_BRIGHTNESS: "Global brightness",
+	SUN: "Sun",
+	BRIGHTNESS: "Brightness",
+	AXIS_POSITION: "Axis position",
+	CAMERA_CONTROLLED_SUN: "Camera controlled sun",
+	SET_POSITION: "Set position",
+	FOLLOW_CAMERA: "Follow camera",
+	POINTS: "Points",
+	POINT_SIZE: "Point size",
+	OPACITY: "Opacity",
+} satisfies BaseTranslation;
+// eslint-disable-next-line import/no-default-export
+export default en;

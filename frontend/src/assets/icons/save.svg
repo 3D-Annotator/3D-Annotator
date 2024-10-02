@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182.46 190.67">
+  <defs>
+    <style>
+      .1 {
+      fill: none;
+      stroke: #000;
+      stroke-miterlimit: 10;
+      stroke-width: 10px;
+      }
+    </style>
+  </defs>
+  <g id="Diskette">
+    <path class="1"
+      d="m17.2,185.67h148.08c6.73,0,12.19-5.73,12.19-12.78V53.7L130.98,5H17.2c-6.73,0-12.2,5.73-12.2,12.78v155.11c0,7.05,5.47,12.78,12.2,12.78Z" />
+    <path class="1"
+      d="m123.39,5.01H59.06v.06s0,25.57,0,25.57c0,6.11,3.75,7.62,8.37,7.62h47.61c4.62,0,8.36-1.52,8.36-7.62V5.01Z" />
+  </g>
+</svg>

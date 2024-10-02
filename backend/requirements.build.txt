@@ -1,0 +1,7 @@
+Django==4.0.6
+django-cors-headers==3.13.0
+django-rest-knox==4.2.0
+django-stubs==1.12.0
+djangorestframework==3.13.1
+djangorestframework-stubs==1.7.0
+gunicorn==20.1.0
