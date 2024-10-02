@@ -186,5 +186,5 @@ Created as part of PSE at the Karlsruhe Institute of Technology in the summer te
 -   [TODO Valentin: Add name]
 -   Moritz Hertler
 -   [TODO Florian: Add name]
--   [TODO Lukas: Add name]
+-   Lukas Kirsch
 -   Linus Wilkins
