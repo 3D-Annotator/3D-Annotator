@@ -183,7 +183,7 @@ Supervisor: Max Hermann & Stefan Wolf
 
 Created as part of PSE at the Karlsruhe Institute of Technology in the summer term 2022 by
 
--   [TODO Valentin: Add name]
+-   Valentin Dold
 -   Moritz Hertler
 -   [TODO Florian: Add name]
 -   Lukas Kirsch
