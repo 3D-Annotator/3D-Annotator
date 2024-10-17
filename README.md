@@ -185,6 +185,6 @@ Created as part of PSE at the Karlsruhe Institute of Technology in the summer te
 
 -   Valentin Dold
 -   Moritz Hertler
--   [TODO Florian: Add name]
+-   Florian Hüther
 -   Lukas Kirsch
 -   Linus Wilkins
