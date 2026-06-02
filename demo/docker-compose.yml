@@ -1,0 +1,73 @@
+services:
+
+  volume_fixer:
+    image: alpine:latest
+    command:
+      - /bin/sh
+      - -c
+      - |
+        mkdir -p /home/api/backend/static
+        chown -R ${ANNOTATOR_BACKEND_UID}:${ANNOTATOR_BACKEND_GID} /home/api/backend/static
+        mkdir -p /home/api/backend/media
+        chown -R ${ANNOTATOR_BACKEND_UID}:${ANNOTATOR_BACKEND_GID} /home/api/backend/media
+        mkdir -p /home/api/backend/db
+        chown -R ${ANNOTATOR_BACKEND_UID}:${ANNOTATOR_BACKEND_GID} /home/api/backend/db
+    volumes:
+      - api_static:/home/api/backend/static
+      - api_media:/home/api/backend/media
+      - api_db:/home/api/backend/db
+
+  api:
+    container_name: "api"
+    build:
+      context: ..
+      dockerfile: deployment/api/Dockerfile
+    image: "${ANNOTATOR_IMAGE_NAME_FULL_API}:latest"
+    user: "${ANNOTATOR_BACKEND_UID}:${ANNOTATOR_BACKEND_GID}"
+    volumes:
+      - api_static:/home/api/backend/static
+      - api_media:/home/api/backend/media
+      - api_db:/home/api/backend/db
+    ports:
+      - "${ANNOTATOR_BACKEND_PORT}:8000"
+    environment:
+      - DJANGO_DEBUG=${ANNOTATOR_BACKEND_DEBUG}
+      - DJANGO_SECRET_KEY=${ANNOTATOR_BACKEND_SECRET_KEY}
+      - DJANGO_USE_SSL=false
+      - DJANGO_ALLOWED_HOSTS=${ANNOTATOR_BACKEND_ALLOWED_HOSTS}
+      - DJANGO_TRUSTED_ORIGINS=${ANNOTATOR_BACKEND_CSRF_TRUSTED_ORIGINS}
+      - DJANGO_TOKEN_LIMIT_PER_USER=${ANNOTATOR_BACKEND_TOKEN_PER_USER}
+      - DJANGO_SUPERUSER_USERNAME=${ANNOTATOR_BACKEND_SU_NAME}
+      - DJANGO_SUPERUSER_EMAIL=${ANNOTATOR_BACKEND_SU_EMAIL}
+      - DJANGO_SUPERUSER_PASSWORD=${ANNOTATOR_BACKEND_SU_PASSWORD}
+      - GUNICORN_TIMEOUT=${ANNOTATOR_BACKEND_TIMEOUT}
+      - GUNICORN_NUM_WORKERS=${ANNOTATOR_BACKEND_NUM_WORKERS}
+      - ANNOTATOR_BACKEND_MAX_FILE_SIZE=${ANNOTATOR_BACKEND_MAX_FILE_SIZE}
+    restart: unless-stopped
+    depends_on:
+      volume_fixer:
+        condition: service_completed_successfully
+
+  static:
+    container_name: "static"
+    build:
+      context: ..
+      dockerfile: deployment/static/Dockerfile
+      args:
+        - API_BASE=${ANNOTATOR_API_BASE}
+        - TITLE=${ANNOTATOR_FRONTEND_TITLE}
+        - DEBUG=${ANNOTATOR_FRONTEND_DEBUG}
+    image: "${ANNOTATOR_IMAGE_NAME_FULL_STATIC}:latest"
+    volumes:
+      - api_static:/home/api_static:ro
+      - ./nginx.demo.conf:/etc/nginx/conf.d/nginx.conf:ro
+    ports:
+      - "${ANNOTATOR_FRONTEND_PORT}:80"
+    depends_on:
+      - api
+    restart: unless-stopped
+
+volumes:
+  api_media:
+  api_db:
+  api_static:

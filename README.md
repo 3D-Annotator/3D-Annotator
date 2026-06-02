@@ -29,6 +29,7 @@ Currently, our primary focus is on semantic segmentation. However, the tool’s 
   - [Annotation file](#annotation-file)
 - [Getting started](#getting-started)
   - [Browser support](#browser-support)
+  - [Demo](#demo)
   - [Dev server](#dev-server)
   - [Deploy](#deploy)
 - [Technical details](#technical-details)
@@ -200,6 +201,10 @@ This old version is still supported for imports but can not be exported anymore.
 ## Browser support
 
 This project has only been tested on Chrome 86 or newer. Since Firefox and Safari added support for a critical feature in March 2023, they are also expected to work but have not yet been tested enough.
+
+## Demo
+
+For a quick and easy demo, please refer to [this](./demo/README.md) guide.
 
 ## Dev server
 
